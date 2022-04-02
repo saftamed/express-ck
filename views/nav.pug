@@ -1,0 +1,65 @@
+doctype html
+head
+  style.
+    body {
+    margin: 0;
+    }
+    header {
+    background: orangered;
+    }
+    nav {
+    display: flex;
+    width: 79%;
+    margin: auto;
+    align-items: center;
+    align-content: stretch;
+    justify-content: space-between;
+    }
+    nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 27%;
+    margin: 0;
+    }
+    nav ul li {
+    list-style: none;
+    }
+    nav ul li:hover {
+    background-color: orange;
+    }
+    nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 17px 10px;
+    display: inline-block;
+    }
+    nav h2 {
+    margin: 0;
+    text-transform: capitalize;
+    font-size: 2rem;
+    color: white;
+    }
+    .active{
+    background-color: orange;
+    }
+    h1 {
+    position: absolute;
+    font-size: 8rem;
+    top: 29%;
+    text-transform: capitalize;
+    text-align: center;
+    width: 100%;
+    }
+  title #{page}
+header
+  nav
+    h2(style='margin: 0') Express Check Point
+    ul
+      li(class=(page =="home") && 'active')
+        a(href='/') Home
+      li(class=(page =="services") && 'active')
+        a(href='/services') Our Services
+      li(class=(page =="contact") && 'active')
+        a(href='contact') Contact Us
+block content
